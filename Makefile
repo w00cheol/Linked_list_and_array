@@ -1,15 +1,15 @@
 listP : listP.o
 	gcc -o listP listP.o
 
-listC : listC.o
-	gcc -o listC listC.o
+listA : listA.o
+	gcc -o listA listA.o
 
 listP.o : listP.c
 	gcc -c -o listP.o listP.c
   
-listC.o : listC.c
-	gcc -c -o listC.o listC.c
+listA.o : listA.c
+	gcc -c -o listA.o listA.c
   
 clean : 
 	rm *.o listP
-	rm *.o listC
+	rm *.o listA

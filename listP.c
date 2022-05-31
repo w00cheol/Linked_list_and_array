@@ -11,11 +11,7 @@ int main()
     // listType 형태의 구조체를 가리키는 포인터 생성
     // malloc 함수를 이용하여 Heap 공간에 listType 크기의 동적 메모리 할당
     listType *listP = (listType *)malloc(sizeof(listType));
-
-    // 작업에 사용될 원소의 순서번호와 값, 기능을 저장하는 변수 선언
     int menu, sequence, value;
-
-    // 각 작업이 끝나고 사용자의 행동을 입력받을 문자형 변수 선언
     char quit;
 
     while (1)
@@ -108,17 +104,6 @@ int main()
                 free(listP);
                 return 0;
         }
-    }
-
-    printf("Continue: ");
-    scanf("%c", &quit);
-
-    if (quit != 'Y') {
-        printf("프로그램을 종료합니다.\n");
-
-        // Heap 에서 사용하던 메모리 반납 후 프로그램 종료
-        free(listP);
-        return 0;
     }
 }
 

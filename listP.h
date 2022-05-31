@@ -1,13 +1,11 @@
-typedef struct nodeRecord
-{
+typedef struct nodeRecord {
     int Data;
     struct nodeRecord* Next;
 } node;
 
 typedef node* Nptr;
 
-typedef struct 
-{
+typedef struct {
     int Count;
     Nptr Head;
 } listType;
